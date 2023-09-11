@@ -1,0 +1,98 @@
+* {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #fafafa;
+  font-family: 'Barlow', -apple-system, BlinkMacSystemFont, Roboto, Helvetica,
+    Arial, sans-serif;
+  color: #1e1e1e;
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 16px;
+}
+
+body,
+html,
+#__next {
+  height: 100%;
+  width: 100%;
+}
+// #__next {
+//   overflow-x: hidden;
+// }
+
+p {
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0px;
+  font-size: 16px;
+}
+
+.btn {
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-family: 'Barlow', -apple-system, BlinkMacSystemFont, Roboto, Helvetica,
+    Arial, sans-serif;
+}
+
+a {
+  color: #3740ff;
+  text-decoration: underline;
+  &:hover {
+    color: #3740ff;
+    text-decoration: none;
+  }
+  &:focus {
+    outline: 1px solid #3740ff;
+    // background-color: rgba(55, 64, 255, 0.16);
+    text-decoration: none;
+  }
+}
+
+.modal-backdrop.show {
+  opacity: 0.7;
+}
+
+.body-lock {
+  overflow: hidden;
+}
+
+.text-underline-hover {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// reset scrollbar
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+  border-radius: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: inherit;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

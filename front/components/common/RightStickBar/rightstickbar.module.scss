@@ -1,0 +1,167 @@
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 12px;
+    transition: all 0.3s ease;
+    font-size: 15px;
+    position: fixed;
+    right: 1px;
+    top: 85px;
+    z-index: 999999;
+    a {
+        color: #fff;
+        text-decoration: none;
+        background-color: transparent;
+    }
+    .facebook {
+        padding: 10px;
+        height: 35px;
+        width: 35px;
+        font-size: 15px;
+        text-align: center;
+        text-decoration: none;
+        background: #3B5998;
+        color: white;
+    }
+    .twitter {
+        padding: 10px;
+        height: 35px;
+        width: 35px;
+        font-size: 15px;
+        text-align: center;
+        text-decoration: none;
+        background: #55ACEE;
+        color: white;
+    }
+    .linkedin {
+        padding: 10px;
+        height: 35px;
+        width: 35px;
+        font-size: 15px;
+        text-align: center;
+        text-decoration: none;
+        background: #007bb5;
+        color: white;
+    }
+        .btnsubmit {
+            height: 35px;
+            background: #007bb5;
+            color: white;
+            bottom: 10px;
+            display: inline-block;
+            padding: 0 10px;
+            text-align: left;
+            transform: rotate(-90deg);
+            transform-origin: left;
+            white-space: nowrap;
+            border: none;
+            margin-top: 172px;
+            margin-right: -172px;
+            font-family: Helvetica;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+
+        
+}
+
+.formWrap {
+    padding: 30px;
+    .header {
+        position: relative;
+        .title {
+            font-family: Helvetica;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 28px;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+            color: #242424;
+            text-align: center;
+        }
+        .close {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            position: absolute;
+            right: 0;
+            top: -8px;
+            text-shadow: 0 1px 0 #fff;
+        }
+    }
+    .form {
+        text-align: center;
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        .field {
+            width: 387px;
+            display: block;
+            margin: auto;
+            margin: 10px auto 10px auto;
+            .input {
+                height: 41px;
+                background: #F7F7F7;
+                box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
+                border-radius: 2px;
+                
+                border: none;
+                outline: none;
+                padding: 15px;
+                color: #8b8b8b;
+                font-size: 12px;
+                width: 100%;
+                &:active {
+                    border: unset;
+                }
+                &::placeholder {
+                    color: #8b8b8b;
+                }
+            }
+            .select {
+                height: 41px;
+                background: #F7F7F7;
+                box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
+                border-radius: 2px;
+                border: none;
+                outline: none;
+                color: #8b8b8b;
+                font-size: 12px;
+                width: 100%;
+                padding-left: 15px;
+                &:active {
+                    border: unset;
+                }
+                &::placeholder {
+                    color: #8b8b8b;
+                }
+            }
+        }
+        
+        .submitbtn {
+            color: #fff;
+            padding: 12px 21px;
+            font-size: 13px;
+            border: 2px solid #14689b;
+            background-color: #14689b;
+            border-radius: 2px;
+            transition: all .5s;
+            cursor: pointer;
+            letter-spacing: 1.5px;
+            max-width: 210px;
+            width: 100%;
+            height: 61px;
+            margin: 50px auto auto auto;
+        }
+    }
+    
+}

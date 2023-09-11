@@ -1,0 +1,383 @@
+.aboutus {
+    .banner {
+        background-image: url("../../../assets/images/aboutus/About-us-page_2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center top;
+        position: relative;
+        opacity: 1;
+        width: 100%;
+        height: 100vh;
+        min-height: 478px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 30px;
+        .title {
+            font-size: 40px;
+            font-weight: 600;
+            text-shadow: 0 2px 5px rgba(0,0,0,.498);
+            line-height: 70px;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        
+        .subtitle {
+            text-align: center;
+            line-height: 40px;
+            color: #fff;
+            letter-spacing: 1px;
+            font-size: 22px;
+            text-shadow: rgba(0,0,0,.498039) 0 2px 5px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+    .history {
+        .container {
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+            .sec1 {
+                padding: 7% 0;
+                .notfound {
+                    font-size: 26px!important;
+                    line-height: 30px;
+                    font-weight: 100!important;
+                    color: #585858;
+                    text-align: center;
+                    margin: 0 0 10px;
+                }
+                .aboutFoundDesc {
+                    font-size: 18px;
+                    line-height: 28px;
+                    color: #696969;
+                    padding-bottom: 10px;
+                    margin: 0;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .grayed {
+        background-color: #edeae7;
+        color: #7a7a7a;
+        z-index: 3;
+        margin-top: 20px;
+                margin-bottom: 10px;
+        .header {
+            height: 70px;
+            line-height: 65px;
+            background: #303e49;
+            text-align: center;
+            display: block;
+            .title {
+                color: #fff;
+                font-size: 40px;
+                padding: 14px 0;
+                font-weight: 500;
+                line-height: 1.1;
+            }
+        }
+
+        .flowContainer {
+            margin-top: 2em;
+            width: 90%;
+            max-width: 1170px;
+            margin: 0 auto;
+            display: block;
+            position: relative;
+            padding: 2em 0;
+            margin-top: 2em;
+           
+        }
+    }
+    .secthree {
+        background-image: url("../../../assets/images/aboutus/section_three_banner.jpg");
+        min-height: 510px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+        .container {
+            padding-right: 30px;
+            padding-left: 30px;
+            margin-right: auto;
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+            .visionTitle {
+                text-transform: capitalize;
+                font-size: 42px;
+                line-height: 60px;
+                text-shadow: rgba(0,0,0,.498039) 0 2px 5px;
+                color: #fff;
+                letter-spacing: 2px;
+                font-weight: 400;
+                margin-top: 30px;
+                margin-bottom: 10px;
+                text-align: center;
+                opacity: 1;
+            }
+            .vision {
+                line-height: 40px;
+                color: #fff;
+                letter-spacing: 1px;
+                font-size: 22px;
+                text-shadow: rgba(0,0,0,.498039) 0 2px 5px;
+                margin: 0 auto;
+                text-transform: none;
+                font-weight: 500;
+                text-align: center;
+                opacity: 1;
+            }
+        }
+    }
+    .secfour {
+        .container {
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+            .missionSec {
+                padding: 7% 0;
+                .title {
+                    font-size: 36px;
+                    text-align: center;
+                    margin-top: 20px;
+                    margin-bottom: 10px;
+                    font-weight: 500;
+                    line-height: 1.1;
+                    color: #7A7A7A;
+                }
+                .paraContainer {
+                    text-align: center;
+                    color: #52626f;
+                    line-height: 35px;
+                    font-size: 22px;
+                    font-weight: 300;
+                    margin: 0!important;
+                     > p {
+                        all: inherit
+                     }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+    .aboutus {
+        .banner {
+            .title {
+                font-size: 27px;
+                line-height: 32px;
+                font-weight: 500;
+                text-shadow: 0 2px 5px rgba(0,0,0,.498);
+            }
+            .subtitle {
+                margin-top: 30px !important;
+                font-size: 16px !important;
+                line-height: 24px !important;
+                letter-spacing: 1px !important;
+                text-shadow: rgba(0,0,0,.498039) 0 2px 5px !important;
+                text-align: center !important;
+                margin-bottom: 10px !important;
+                font-weight: 500 !important;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .aboutus {
+        .banner {
+            .title {
+                font-size: 30px;
+                font-weight: 600;
+                text-shadow: 0 2px 5px rgba(0,0,0,.498);
+                line-height: 70px;
+                color: #fff;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                margin-top: 20px;
+                margin-bottom: 10px;
+                text-align: center;
+            }
+        }
+        .grayed {
+            .flowContainer {
+                .imgdesk {
+                    display: none;
+                }
+                .imgmobile {
+                    display: block;
+                }
+                .imgtab {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .aboutus {
+        .banner {
+            .title {
+                font-size: 24px;
+                font-weight: 500;
+                line-height: 30px;
+            }
+            .subtitle {
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+        .history {
+            .container {
+                .aboutFoundDesc {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+                .notfound {
+                    line-height: 30px;
+                        font-size: 26px!important;
+                    font-weight: 100!important;
+                    color: #585858;
+                }
+            }
+        }
+        .secthree {
+            .container {
+                .visionTitle {
+                    font-size: 30px;
+                    line-height: 60px;
+                    text-shadow: rgba(0,0,0,.498039) 0 2px 5px;
+                    letter-spacing: 2px;
+                    font-weight: 400;
+                }
+                .vision {
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #FFF;
+                    letter-spacing: 1px;
+                    text-shadow: rgba(0,0,0,.498039) 0 2px 5px;
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1170px) {
+    .grayed {
+        .flowContainer {
+            margin-top: 3em;
+            position: relative;
+            padding: 2em 0;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .aboutus {
+        .history {
+            .container {
+                max-width: 750px;
+            }
+        }
+        .secthree {
+            .container {
+                max-width: 750px;
+            }
+        }
+        .secfour {
+            .container {
+                max-width: 750px;
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+    .aboutus {
+        .grayed {
+            .flowContainer {
+                .imgdesk {
+                    display: none;
+                }
+                .imgmobile {
+                    display: none;
+                }
+                .imgtab {
+                    display: block;
+                    max-width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .aboutus {
+        .history {
+            .container {
+                max-width: 950px;
+            }
+        }
+        .grayed {
+            .flowContainer {
+                .imgtab {
+                    display: none;
+                }
+                .imgmobile {
+                    display: none;
+                }
+            }
+        }
+        .secthree {
+            .container {
+                max-width: 950px;
+            }
+        }
+        .secfour {
+            .container {
+                max-width: 970px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .aboutus {
+        .history {
+            .container {
+                max-width:1168px;
+            }
+        }
+        .secthree {
+            .container {
+                max-width:1168px;
+            }
+        }
+        .secfour {
+            .container {
+                max-width: 1170px;
+            }
+        }
+    }
+}
+

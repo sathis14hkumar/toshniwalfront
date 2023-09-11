@@ -1,0 +1,11 @@
+{
+    "theme_color": "#fdd10e",
+    "background_color": "#fff",
+    "display": "standalone",
+     "orientation": "portrait",
+    "start_url": "/auth",
+    "name": "Next basev2 with PWA",
+    "short_name": "Next PWA",
+    "description": "Nextjs base setup with prettier and PWA configuration",
+    "prefer_related_applications": true
+}

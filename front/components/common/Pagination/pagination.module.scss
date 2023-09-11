@@ -1,0 +1,43 @@
+.paginationWrap {
+    ul {
+        padding-left: 0;
+        margin: 20px 0;
+        border-radius: 4px;
+        display: inline-flex;
+        li {
+            &:focus {
+                box-shadow: none !important;
+                border-color: transparent !important
+            }
+
+            &.active {
+                a {
+                    color: #fff;
+                    cursor: default;
+                    background-color: #337ab7;
+                    border-color: #337ab7;
+                }
+            }
+
+            a {
+                color: #337ab7;
+
+                &:hover {
+                    color: #337ab7;
+                }
+
+                &.rightRadius {
+                    margin: 0;
+                    border-top-right-radius: 4px;
+                    border-bottom-right-radius: 4px;
+                }
+
+                &.leftRadius {
+                    border-top-left-radius: 4px;
+                    border-bottom-left-radius: 4px;
+                }
+            }
+
+        }
+    }
+}

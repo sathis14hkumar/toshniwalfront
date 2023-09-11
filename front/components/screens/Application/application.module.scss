@@ -1,0 +1,372 @@
+.application {
+    background-color: #fff;
+
+    .banner {
+        background-color: transparent;
+        // background-image: url("../../../assets/images/application/HomePage_Flow-2-1.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        // background-position: center 100%;
+        height: 440px;
+        min-height: 440px;
+        opacity: 1;
+        width: 100%;
+        z-index: 9;
+        display: flex;
+
+        .container {
+            flex: 1 1 1;
+
+            .bannerHeader {
+                margin-top: 20%;
+
+                h3 {
+                    text-shadow: 1px 2px #1c1c1c;
+                    color: #FFF;
+                    font-size: 24px;
+                    font-weight: 500;
+                    line-height: 1.1;
+                    margin-top: 20px;
+                    margin-bottom: 10px;
+                }
+
+                h1 {
+                    color: #FFF;
+                    font-size: 40px;
+                    font-weight: 600;
+                    line-height: 1.1;
+                    margin: .67em 0;
+                    margin-top: 20px;
+                    margin-bottom: 10px;
+                    text-shadow: 0 2px 5px rgba(0, 0, 0, .498);
+                }
+            }
+        }
+    }
+    .bannerImage{
+        @extend .banner;
+        background-image: url("../../../assets/images/application/Process-Vacuum-Banner-1060x460.png");
+        background-position: center !important;
+    }
+    .bannerImage2{
+        @extend .banner;
+        background-image: url("../../../assets/images/application/Mixer-Banner-1-1060x460.jpg");
+    }
+    .bannerImage3{
+        @extend .banner;
+        background-image: url("../../../assets/images/application/HomePage_Flow-2-1.jpg");
+    }
+    .grayed {
+        background-color: #f9f9f9;
+        color: #f6f6f6;
+        z-index: 3;
+
+        .header {
+            height: 90px;
+            line-height: 65px;
+            background: #edeae7;
+            text-align: center;
+            display: block;
+
+            .title {
+                color: #7a7a7a;
+                font-size: 26px;
+                padding: 25px 10px;
+                font-weight: 500;
+                line-height: 1.1;
+            }
+        }
+        .header2{
+            @extend .header;
+            height: 220px;
+            .title{
+                padding: 60px 20px 0px;
+            }
+            .subtitle{
+                color: #7a7a7a;
+                font-size: 20px;
+                padding: 0px 250px;
+                font-weight: 500;
+                line-height: 1.5;
+            }
+        }
+    }
+
+    .gridWrapper {
+        align-items: center;
+        .masonryItem {
+            position: relative;
+            margin: 0;
+            overflow: hidden;
+        }
+        .masonryItem img{
+            background-size: cover;
+            width: 100%;
+        }
+        .masonryItem a {
+            color: white;
+            font-size: 25px;
+            max-width: 250px;
+            margin: auto;
+            position: absolute;
+            text-decoration: none;
+            left: 0;
+            top: 70px;
+            right: 0;
+            text-align: center;
+        }
+    }
+
+    .gridWrapper2 {
+
+        .masonryItem {
+            position: relative;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .masonryItem img {
+            background-size: cover;
+            width: 100%;
+        }
+
+        .masonryItem a {
+            color: white;
+            font-size: 25px;
+            max-width: 250px;
+            margin: auto;
+            position: absolute;
+            text-decoration: none;
+            left: 0;
+            top: 70px;
+            right: 0;
+            text-align: center;
+        }
+
+    }
+    .gridWrapper3 {
+
+        .masonryItem {
+            position: relative;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .masonryItem img {
+            background-size: cover;
+            width: 100%;
+        }
+
+        .masonryItem a {
+            color: white;
+            font-size: 25px;
+            max-width: 250px;
+            margin: auto;
+            position: absolute;
+            text-decoration: none;
+            left: 0;
+            top: 80px;
+            right: 0;
+            text-align: center;
+        }
+
+    }
+    .submitbtn {
+        color: #fff;
+        padding: 10px 15px;
+        font-size: 14px;
+        border: 2px solid #14689b;
+        background-color: #14689b;
+        border-radius: 2px;
+        transition: all .5s;
+        cursor: pointer;
+        letter-spacing: 1.5px;
+        margin: 30px 0;
+    }
+    .submitbtn:hover {
+        background-color: #f0ad4e;
+        border: 2px solid #f0ad4e
+    }
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+    .application {
+        .banner {
+            height: auto;
+            min-height: auto;
+            max-height: unset;
+            background-size: unset;
+            padding-bottom: 50px;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .application {
+        .banner {
+            height: auto;
+            min-height: auto;
+            max-height: unset;
+            background-size: unset;
+            padding-bottom: 30px;
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .application {
+        .banner {
+            .container {
+                .bannerHeader {
+                    margin-top: 26%;
+
+                    h1 {
+                        font-size: 260%;
+                    }
+
+                    h3 {
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+        .grayed {
+            .header2{
+                .title{
+                    padding: 40px 20px 0px;
+                }
+                .subtitle{
+                    padding: 0px 30px;
+                }
+            }
+        }
+        .gridWrapper {
+            .masonryItem{
+                top: 0 !important;
+            }
+            .masonryItem a {
+                top: 40px;
+                font-size: 18px;
+            }
+        }
+        .gridWrapper2 {
+            .masonryItem a {
+                font-size: 25px;
+                right: 10px;
+                top: 40px;
+            }
+
+        }
+        .gridWrapper3 {
+            .masonryItem{
+                top: 0 !important;
+                height: 200px;
+            }
+            .masonryItem a {
+                top: 80px;
+                font-size: 18px;
+            }
+        }
+
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .application {
+        .banner {
+            .container {
+                display: flex;
+                flex-grow: 1;
+
+                .bannerHeader {
+                    margin-top: 150px;
+
+                    h1 {
+                        font-size: 160%;
+                        font-weight: 500;
+                    }
+
+                    h3 {
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+
+        .grayed {
+            .header {
+                padding-bottom: 120px;
+            }
+            .header2{
+                .title{
+                    padding: 10px 20px 0px;
+                }
+                .subtitle{
+                    padding: 0px 30px;
+                }
+            }
+        }
+        .gridWrapper {
+            .masonryItem a {
+                top: 60px;
+                font-size: 20px;
+            }
+        }
+        .gridWrapper2 {
+
+            .masonryItem a {
+
+                top: 50px;
+            }
+
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .application {
+        .banner {
+            .container {
+                .bannerHeader {
+                    h1 {
+                        font-weight: 500;
+                        line-height: 30px;
+                        font-size: 24px;
+                    }
+
+                    h3 {
+                        font-size: 95%;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}

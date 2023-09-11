@@ -1,0 +1,26 @@
+$primary: #8bd8bd;
+$secondary: #243665;
+$white: #ffffff;
+$black: #000000;
+$orange: #ff8000;
+$danger: #fc3131;
+$grey-4c: #4c565c;
+$black-1d: #1d1d1d;
+
+/* Color */
+$myColors: (
+  'grey-4c': $grey-4c,
+);
+
+@each $name, $colors in $myColors {
+  $index: index($myColors, $colors);
+  .text-#{$name} {
+    color: $colors;
+  }
+  .bg-#{$name} {
+    background-color: $colors;
+  }
+  .bc-#{$name} {
+    border-color: $colors;
+  }
+}

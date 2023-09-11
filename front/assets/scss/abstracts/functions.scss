@@ -1,0 +1,96 @@
+@import './mixins.scss';
+
+$root-font-size: 16px;
+
+@function pxToRem($size) {
+  $remSize: $size / $root-font-size;
+  @return #{$remSize}rem;
+}
+
+/* Font Size */
+$fs: 128;
+@while $fs > 8 {
+  .fs-#{$fs} {
+    font-size: $fs * 1px;
+
+    @include media-breakpoint-mobile-port {
+      font-size: $fs * 1px - 2px;
+    }
+  }
+  $fs: $fs - 1;
+}
+
+/* Line Height */
+$lh: 192;
+@while $lh > 8 {
+  .lh-#{$lh} {
+    line-height: $lh * 1px;
+    @include media-breakpoint-mobile-port {
+      line-height: $lh * 1px - 2px;
+    }
+  }
+  $lh: $lh - 1;
+}
+
+/* Font-weight */
+$fw: 800;
+@while $fw > 400 {
+  .fw-#{$fw} {
+    font-weight: $fw;
+  }
+  $fw: $fw - 100;
+}
+
+/* Height */
+$height: 700;
+@while $height > 400 {
+  .h-#{$height} {
+    height: $height;
+  }
+  $height: $height - 50;
+}
+
+$margin: 10;
+
+@while $margin <= 50 {
+  .mt-#{$margin} {
+    margin-top: #{$margin}px;
+  }
+  .mr-#{$margin} {
+    margin-right: #{$margin}px;
+  }
+  .mb-#{$margin} {
+    margin-bottom: #{$margin}px;
+  }
+  .ml-#{$margin} {
+    margin-left: #{$margin}px;
+  }
+
+  @include media-breakpoint-mobile-port {
+    .mt-md-#{$margin} {
+      margin-top: #{$margin}px !important;
+    }
+    .mr-md-#{$margin} {
+      margin-right: #{$margin}px !important;
+    }
+    .mb-md-#{$margin} {
+      margin-bottom: #{$margin}px !important;
+    }
+    .ml-md-#{$margin} {
+      margin-left: #{$margin}px !important;
+    }
+  }
+
+  $margin: $margin + 5;
+}
+
+//  rotate
+
+$rotate: 360;
+
+@while $rotate > 0 {
+  .r-#{$rotate} {
+    transform: rotate(#{$rotate}deg);
+  }
+  $rotate: $rotate - 90;
+}
